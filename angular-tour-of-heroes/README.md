@@ -81,3 +81,26 @@ Lưu ý cần phải import thư viện sau
 import { FormsModule } from '@angular/forms';
 ```
 
+### Hiển thị danh sách 
+
+```html
+
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+
+```
+
+sử dụng *ngFor để in ra danh sách
+
+### Sử lý sự kiện onclick 
+
+để thêm sự kiện onclick vào một element chúng ta làm như sau 
+
+```html
+<li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+```
+
