@@ -80,3 +80,4 @@ Lưu ý cần phải import thư viện sau
 ```angularjs
 import { FormsModule } from '@angular/forms';
 ```
+
