@@ -44,3 +44,21 @@ hero: Hero = {
     name: 'Windstorm'
   };
 ```
+
+### Show component 
+
+Để hiển thị bạn có thể sử dụng cú pháp như trong django hay flask trong template 
+
+dùng ký hiệu ```{{ hero }}```
+
+#### Format với Pipe 
+
+Angular hỗ trợ rất nhiều kiểu để bạn có thể tùy chỉnh cách hiển thị để sử dụng pipe bạn làm như sau
+
+```html
+<h2>{{hero.name | uppercase }} Details </h2>
+
+```
+### Binding 
+
+#### Two-way binding 
