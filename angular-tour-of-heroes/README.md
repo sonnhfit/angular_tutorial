@@ -62,3 +62,21 @@ Angular hỗ trợ rất nhiều kiểu để bạn có thể tùy chỉnh cách
 ### Binding 
 
 #### Two-way binding 
+
+sử dụng ngModel để binding dữ liệu
+
+```html
+
+<div>
+  <label>name:
+    <input [(ngModel)]="hero.name" placeholder="name"/>
+  </label>
+</div>
+
+```
+
+Lưu ý cần phải import thư viện sau 
+
+```angularjs
+import { FormsModule } from '@angular/forms';
+```
